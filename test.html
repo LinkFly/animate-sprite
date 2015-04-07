@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprite animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="animate-sprite.jquery.js"></script>
+    <style>
+        img#sprite {
+            display: inline-block;
+        }
+        #animation {
+            border: 2px solid purple;
+            width: 98px;
+            height: 98px;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="animation">
+      <img id="sprite" src="nu-pogodi-sprite.png"/>
+  </div>
+<script>
+    $(function(){
+        $('#animation').animateSprite({frameWidth: 98, frameCount: 9, autoreplay: true});
+    });
+</script>
+</body>
+</html>
