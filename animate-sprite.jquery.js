@@ -5,7 +5,7 @@
         sprite: null,
         frameWidth: undefined,
         frameCount: undefined,
-        speed: 60,
+        speed: 30,
         autostart: true,
         _timer: undefined,
         _frameCur: 0
